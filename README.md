@@ -13,7 +13,7 @@ This interactive dashboard displays bacteria population data for various samples
 - Select a sample from the dropdown menu to see the corresponding charts and metadata.
 
 ## Live Demo
-You can view the live demo of the dashboard [here](https://your-username.github.io/microbiome-dashboard/).
+You can view the live demo of the dashboard [here](https://leebaedke.github.io/belly-button-challenge/).
 
 
 
