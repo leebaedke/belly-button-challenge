@@ -50,10 +50,9 @@ function buildCharts(sample) {
       }
     }];
 
-    const bubbleData = [bubbleTrace];
-
+    
     const bubbleLayout = {
-      title: `Bacteria Cultures per Sample ${sample}`,
+      title: `Bacteria Cultures for Sample ${sample}`,
       xaxis: { title: 'OTU ID' },
       yaxis: { title: 'Number of Bacteria' },
       hovermode: 'closest'
@@ -61,7 +60,7 @@ function buildCharts(sample) {
 
     
     // Render the Bubble Chart
-    Plotly.newPlot('bubble', bubbleData, bubbleLayout);
+    Plotly.newPlot('bubble', bubbleTrace, bubbleLayout);
 
     // For the Bar Chart, map the otu_ids to a list of strings for your yticks
     const yticks = otu_ids.slice(0, 10).map(id => `OTU ${id}`);
@@ -81,6 +80,7 @@ function buildCharts(sample) {
     const barLayout = {
       title: 'Top 10 Bacteria Cultures Found',
       margin: { l: 100, r: 100, t: 100, b: 100 }
+    };
 
     // Render the Bar Chart
     Plotly.newPlot('bar', barData, barLayout);
