@@ -5,7 +5,7 @@
 This interactive dashboard displays bacteria population data for various samples. It includes visualizations like bar and bubble charts, along with sample metadata.
 
 ## Features
-- Displays metadata about the sample (e.g., age, gender, ethnicity, etc.)
+- Displays metadata about the sample (id, age, gender, ethnicity, location, etc.)
 - Interactive bar chart showing the top 10 most abundant OTUs.
 - Bubble chart for visualizing OTU data and sample values.
 
